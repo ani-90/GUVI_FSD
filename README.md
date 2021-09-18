@@ -1,2 +1,2 @@
 # GUVI_FSD
-Javascript! Javascript! Javascript!....DSA!...DSA!...DSA!
+HTML,CSS,JS,DSA and much more!
