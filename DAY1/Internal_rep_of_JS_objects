@@ -1,0 +1,27 @@
+In JavaScript, almost everything is an object. An object can be defined as an unordered collection of data in the form of "Key:value" pairs.
+The key here can also be called as a property of an object. The properties of an object together give us an idea about the object we are dealing with.
+
+eg:
+
+Student={
+name:"Ravi",
+age:21,
+dept:"CSE"
+fav_icecream:"Choco-vanilla"
+};
+
+The above is an object Student and name,age,dept,fav_icecreams are the properties of the object. 
+
+print each value individually:
+
+console.log(Student.name) //Ravi
+console.log(Student.age)  //21
+console.log(Student.dept) //CSE
+console.log(Student.fav_icecream)// Choco-vanilla
+
+An object, is a reference data type. Variables that are assigned a reference value are given a reference or a pointer to that value. 
+That reference or pointer points to the location in memory where the object is stored. The variables don’t actually store the value.
+
+
+Each property of an object is also a variable, except that it is encapsulated within the object.
+
