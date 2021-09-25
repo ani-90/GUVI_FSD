@@ -1,1 +1,20 @@
+Q) Write a blog on difference between HTTP1.1 and HTTP2
 
+HTTP stands for Hyper Text Transfer Protocol. It is the method which clients and servers use to send requests/responses to each other.
+
+HTTP 1.1:
+Was developed in the Year 1997.However there were some problems which were encountered.
+i) HTTP1.1 loads resources one after the other. So if one resource can't be loaded, it blocks all other resources from being loaded.
+ii) Repetition of header data:Every HTTP request is independent of the previous and the next request. Each HTTP request will be packed with header data(which cannot be compressed).
+    Thus the same header data will be sent as part of every request, which is not required.
+iii) Even though HTTP 1.1 currently supports upto 6 seperate TCP connections to be made in parallel, it is not enough.
+    
+    
+    
+HTTP 2:
+i)Uses a single secure TCP connection.
+ii)Every HTTP request is sent as a stream, thus no one resource will block the other resource. HTTP 2 does this by splitting data into binary-coded messages and numbering these messages,
+  so that client knows to which stream each binary message belongs to.
+  
+iii) HPACK is a feature in HTTP 2 which seperates header data from request data and can be zipped.
+iv) Push frames is another feature which enables servers to send mandatory resources in andvance along with the HTTP response.
