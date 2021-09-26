@@ -14,4 +14,97 @@
                    
                    
           
- b)
+ b)Convert a string to Title case 
+                           
+                           var ans=(a)=>{
+                             var x=a.split(" ")
+                                  for(i=0;i<x.length;i++)
+                                  {
+                                     if(97<=x[i].charCodeAt(x[i])<=122)
+                                     {
+                                         x[i]=x[i].toUpperCase()
+                                     }
+                                  }
+                                  var m= x.join()
+                                  var k=''
+                                  for(let i in m)
+                                  {
+                                    if(m[i]!==',')
+                                    {
+                                        k=k+m[i]
+                                    }
+                                    else
+                                    {
+                                        k=k+" "
+                                    }
+                                  }
+                                  return k
+                                  }
+
+                                  console.log(ans("An apple a day keeps the doctor away"))
+                                  
+                                  
+                                  
+                                  
+                                  
+ c)SUM of all numbers in an array
+ 
+
+                                       var sum=(a)=>
+                                      {let s=0
+                                          for(let i=0;i<a.length;i++)
+                                          {
+                                              s=s+a[i]
+                                          }
+                                          console.log(s)
+                                      }
+                                      sum([1,2,3,4,5])
+
+
+d)Return all prime numbers in an array
+
+                                                var prime=(a)=>
+                                              {
+                                                  for(let i=0;i<a.length;i++)
+                                                  {let fc=0
+                                                      for(let j=1;j<=a[i];j++)
+                                                      {
+                                                          if(a[i]%j===0)
+                                                          {
+                                                              fc=fc+1
+                                                          }
+                                                      }
+                                                      if(fc==2)
+                                                      {
+                                                          console.log(a[i])
+                                                      }
+                                                  }
+                                              }
+                                              prime([110,113,111,11111])
+                                              
+                                              
+                                              
+                                              
+                                              
+                                              
+                                              
+                                              
+e)Print all palindromes in an array
+
+                              var pal=(a)=>
+                        {
+                            for(i=0;i<a.length;i++)
+                            {
+                                let w=a[i]
+                                let m=''
+                                for(let j=w.length-1;j>=0;j--)
+                                {
+                                    m=m+w[j]
+                                }
+                                if(m===w)
+                                {
+                                    console.log(a[i])
+                                }
+                            }
+                        }
+                        pal(['Anirudh','RacecaR','malayalam'])
