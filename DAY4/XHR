@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+script.js:
+
+
+// XML HTTP REQUEST
+
+// step 1 : create an XHR object
+ var req=new XMLHttpRequest()
+
+// step 2: open a connection
+
+req.open('GET','https://restcountries.com/v3.1/all',true)
+
+// step 3: initiate connection:
+
+req.send()
+
+// step 4: convert the response from server to JSON array of objects
+
+req.onload=function(){
+    var result=JSON.parse(req.response);
+    //console.log(result)
+    for(let i=0;i<result.length;i++)
+    {
+        console.log(result[i].name,'  ',result[i].capital,'   ',
+        result[i].region,'    ',result[i].subregion,'   ',result[i].population)
+    }
+
+
+}
+
+
+
+
+
+
