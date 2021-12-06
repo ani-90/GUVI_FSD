@@ -1,0 +1,18 @@
+var resume={
+    
+    "first name":'Coderking',
+    "Last name":"Singh",
+    "Date of Birth":'2000-01-03',
+    "City of Residence":"Nagpur",
+    "Age":"21",
+    "Hobbies":"Coding, Cooking,Cricket",
+    "Achievements":"Won masterchef zambia 2020",
+}
+
+// iterate through the above Object
+
+
+for(let i in resume)
+{
+    console.log(i,' ',resume[i])
+}
